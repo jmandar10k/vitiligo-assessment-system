@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+joblib
+fpdf
+matplotlib
+reportlab
+opencv-python
+Pillow
+tensorflow
+scikit-learn
