@@ -5,7 +5,7 @@ joblib
 fpdf
 matplotlib
 reportlab
-opencv-python
+opencv-python-headless
 Pillow
 tensorflow
 scikit-learn
