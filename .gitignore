@@ -1,20 +1,21 @@
 # Virtual Environment
 vitiligo/
 
-# Python
+# Python cache
 __pycache__/
 *.pyc
 
-# Temp files
-temp/
+# Generated files
+*.png
 *.pdf
+temp/
 
-# Models (if large)
+# Model files (if large)
 models/*.h5
 models/*.pkl
 
 # VS Code
 .vscode/
 
-# Environment variables
+# Environment
 .env
