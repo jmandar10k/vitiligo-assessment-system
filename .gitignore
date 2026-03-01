@@ -19,3 +19,7 @@ models/*.pkl
 
 # Environment
 .env
+
+assets/fonts/*.ttf
+assets/fonts/*.pkl
+*.png
