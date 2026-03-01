@@ -1,11 +1,10 @@
 streamlit
 numpy
 pandas
-joblib
-fpdf
 matplotlib
-reportlab
+fpdf
 opencv-python-headless
-Pillow
-tensorflow
+pillow
 scikit-learn
+tensorflow
+huggingface_hub

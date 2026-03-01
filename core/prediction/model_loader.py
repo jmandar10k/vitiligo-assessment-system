@@ -2,11 +2,18 @@ import os
 import pickle
 from functools import lru_cache
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "best.pkl")
+from huggingface_hub import hf_hub_download
+
 
 @lru_cache()
 def load_svc_model():
-    with open(MODEL_PATH, "rb") as file:
-        model = pickle.load(file)
+
+    model_path = hf_hub_download(
+        repo_id="mandar10/vitiligo-models",
+        filename="best.pkl"
+    )
+
+    with open(model_path, "rb") as f:
+        model = pickle.load(f)
+
     return model
