@@ -62,6 +62,13 @@ def generate_vitiligo_report(data: dict):
 
     pdf.add_paragraph(f"Combined Score: {data.get('combined_score')}")
 
+    #--------type-----------
+
+    vitiligo_type = data.get("vitiligo_type")
+    if vitiligo_type:
+        pdf.add_section_title("Vitiligo Type Assessment")
+        pdf.add_paragraph(f"Identified Type: {vitiligo_type}")
+
     # ---------------- Prediction ----------------
     pdf.add_section_title("Overall Risk Assessment")
     pdf.add_paragraph(f"Predicted Risk Level: {data.get('prediction')}")

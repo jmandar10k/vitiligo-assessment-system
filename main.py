@@ -188,6 +188,8 @@ def progression_section_ui():
             f"Based on your responses, the type of vitiligo is: {vitiligo_type}"
         )
 
+        st.session_state.vitiligo_type = vitiligo_type
+
     return vitiligo_type
 
 #insights
@@ -416,7 +418,7 @@ def main():
             "section_scores": section_scores,
             "combined_score": combined_score,
             "prediction": st.session_state.prediction,
-
+            "vitiligo_type": st.session_state.get("vitiligo_type", "Not Assessed"),
             "insights": st.session_state.get("insights", []),
             "conclusion": st.session_state.get("conclusion", None),
 
