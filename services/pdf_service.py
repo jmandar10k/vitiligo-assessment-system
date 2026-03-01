@@ -1,9 +1,13 @@
 import os
 from fpdf import FPDF
+from huggingface_hub import hf_hub_download
 
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-FONT_PATH = os.path.join(BASE_DIR, "assets", "fonts", "DejaVuSans.ttf")
+def get_font_path():
+    return hf_hub_download(
+        repo_id="mandar10/vitiligo-models",
+        filename="DejaVuSans.ttf"
+    )
 
 
 class VitiligoPDF(FPDF):
@@ -37,15 +41,15 @@ def generate_vitiligo_report(data: dict):
 
     pdf = VitiligoPDF()
 
-    # Register font FIRST
-    pdf.add_font("DejaVu", "", FONT_PATH, uni=True)
+    font_path = get_font_path()
 
+    pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
 
-    pdf.add_page()  # Now header() will work
+    pdf.add_font("DejaVu", "", font_path, uni=True)
+    pdf.add_page()
 
     pdf.set_font("DejaVu", "", 12)
-
 
     # ---------------- Patient Info ----------------
     pdf.add_section_title("Patient Information")

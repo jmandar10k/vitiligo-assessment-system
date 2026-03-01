@@ -21,3 +21,5 @@ models/*.pkl
 .env
 
 assets/fonts/*.pkl
+
+assets/fonts/
