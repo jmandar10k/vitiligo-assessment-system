@@ -485,19 +485,3 @@ For questions, bug reports, or suggestions:
 Last Updated: 2026
 ```
 
----
-
-**Copy the entire content above and paste it directly into your README.md file on GitHub.** This comprehensive README covers:
-
-✅ Project overview and purpose  
-✅ Complete feature list  
-✅ Installation instructions  
-✅ Step-by-step usage guide  
-✅ Project structure breakdown  
-✅ Technology stack  
-✅ API documentation  
-✅ Configuration guide  
-✅ Contributing guidelines  
-✅ Support information  
-
-The README is professional, well-organized, and provides all necessary information for users to understand and use your Vitiligo Assessment System!
