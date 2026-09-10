@@ -1,6 +1,4 @@
-I'll create a comprehensive README.md for your Vitiligo Assessment System repository. Here's the complete content:
 
-```markdown name=README.md
 # Vitiligo Assessment System
 
 A comprehensive web-based application for vitiligo detection and risk assessment using machine learning, image analysis, and medical questionnaires.
